@@ -1,0 +1,45 @@
+ /* Global styles */
+
+ /* Change fonts here, import the fonts you want to use and change it in the body tag */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+ /* Change font size here, most of the text you see on the website uses the font-size set here.  */
+ :root {
+     --gray: rgba(0,0,0,0.5);
+     --super-large-text: 60px;
+     --large-text: 30px;
+     --medium-text: 20px;
+     --default-text: 12px;
+     --small-text: 10px;
+ }
+
+ *, html, body {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     color: var(--gray);
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 600;
+     font-size: var(--default-text);
+ }
+
+ a {
+     text-decoration: none;
+     font-weight: 600;
+     color: var(--gray);
+ }    
+
+ .wrapper {
+     max-width: 1180px;
+     padding: 0 10px;
+     margin: 0 auto;
+ }
+
+ .border-line {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    width: 400px;
+    margin: 0 auto;
+}

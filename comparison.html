@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    
+    <style>
+    
+        .comparison-table {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1050px;
+            color: black;
+            font-size: var(--medium-text);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }   
+
+        .comparison-table > p {
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            padding: 0 5px;
+        }
+
+        .comparison-table > p:first-child, .comparison-table > p:nth-child(2), .comparison-table > p:nth-child(3), .comparison-table > p:nth-child(4) {
+            border-top: 1px solid black;
+        }     
+        
+        .comparison-table > p:nth-child(4n+1) {
+            border-left: 1px solid black;
+        }
+
+        @media (max-width: 900px) {
+            .top-pick-group {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 640px) {
+
+            .comparison-table {
+            
+                font-size: var(--default-text);
+            }   
+
+        }
+
+    </style>
+</head>
+    
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-group wrapper">  
+                <a href="home.html">
+                    <div class="logo"><img src="img/logo.png"></div>
+                </a>  
+                <div class="search">
+                    <label>Seach <input type="text"></label>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-group wrapper">
+                <a href="home.html" class="current">
+                    home
+                    <div class="border-bottom"></div>
+                </a>
+                <a href="tesla.html">
+                    tesla
+                    <div class="border-bottom"></div>
+                </a>
+                <a href="bmw.html">
+                    bmw
+                    <div class="border-bottom"></div>
+                </a>
+                <a href="nissan.html">
+                    nissan
+                    <div class="border-bottom"></div>
+                </a>
+                <a href="comparison.html">
+                    comparison
+                    <div class="border-bottom"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="top-pick">
+            <div class="top-pick-group wrapper">
+                <h1>Comparison</h1>
+                <a href="tesla2.html" class="car-item-container">
+                    <img src="img/tesla_car.png" class="car-img">
+                    <div class="car-brand">Tesla</div>
+                    <div class="car-name">Model S</div>
+                </a>
+                <a href="bmw2.html" class="car-item-container">
+                    <img src="img/bmw_car.png" class="car-img">
+                    <div class="car-brand">BMW</div>
+                    <div class="car-name">Model i3</div>
+                </a>
+                <a href="nissan2.html" class="car-item-container">
+                    <img src="img/nissan_car.png" class="car-img">
+                    
+                    <div class="car-brand">Nissan</div>
+                    <div class="car-name">Model Leaf</div>
+                </a>
+            </div>
+        </div>
+        <div class="border-line"></div>
+        <div class="comparison-table wrapper">
+            <!-- Model -->
+            <p>Model</p>
+            <p>Tesla Model 3</p>
+            <p>BMW i3</p>
+            <p>Nissan Leaf</p>
+
+            <!-- Price -->
+            <p>Starting Price (RM)</p>
+            <p>145,768</p>
+            <p>184,912</p>
+            <p>180,566</p>
+
+            <!-- Battery -->
+            <p>Battery</p>
+            <p>
+                    50 kWh 2170 lithium-ion battery cell (Panasonic & Tesla),
+                    <br>
+                    <br>
+                    30 – 33% more energy compared with previous generation 18650 cells.
+            </p>
+            <p>33.2 kWh Lithium-ion battery cell</p>
+            <p>40 kWh Lithium-ion battery cell</p>
+
+            <!-- Range (KM) -->
+            <p>Range (Km)
+                    ** EPA-estimated range</p>
+            <p>354 (Km) </p>
+            <p>169 (Km)</p>
+            <p>243 (Km)</p>
+
+             <!-- Charging rate -->
+             <p>Charging Rate</p>
+            <p>Supercharger: 209 Kilometre of range per 30 minutes
+
+                    <br>
+                    <br>
+                    Home charging rate: 48 Kilometre of range per hour (240V outlet, 32A)
+                    </p>
+            <p>
+                    Home “wallbox” 4 - 6 Hours, compatible with two charging rates: 3.7kW or 7kW
+                    <br>
+                    <br>
+                    
+                    Rapid charging station, at 11kw (AC rapid charger) or at 50kW (DC rapid charger).
+                    </p>
+            <p>Quick Charge Port 
+                    (80 percent capacity in 40 minutes)
+                    </p>
+
+            <!-- Transmission Type -->
+            <p>Transmission Type</p>
+            <p>Single Speed Fixed Gear</p>
+            <p>Single Speed Direct Drive</p>
+            <p>Single Speed Direct Drive</p>
+
+            <!-- Standard Drive Modes -->
+            <p>Standard Drive Modes</p>
+            <p>Track Mode</p>
+            <p>Comfort, Eco Pro and Eco Pro+</p>
+            <p>Three: Normal, Eco-Mode and B-Mode</p>
+
+            <!-- Performance -->
+            <p>Performance</p>
+            <p>0-60 mph: 5.6 seconds
+                    <br>
+                    <br>
+                    Top speed: 130 mph
+                    </p>
+            <p>
+                    170-hp Electric Motor
+                    0-60 mph: 5.1 seconds
+                    </p>
+            <p>147-hp Electric Motor
+                    0-60 mph: 7.5 s</p>
+
+            
+            <!-- Top Speed -->
+            <p>Top Speed</p>
+            <p>225 km/h</p>
+            <p>150 Km/h</p>
+            <p>140 Km/h</p>
+
+            
+            <!-- Drive System -->
+            <p>Drive System</p>
+            <p>All-Wheel Drive (AWD)</p>
+            <p>
+                    Rear Wheel Drive (RWD)
+                    </p>
+            <p>Front Wheel Drive (FWD)</p>
+
+            
+            <!-- Seating Capacity (Person) -->
+            <p>Seating Capacity (Person)</p>
+            <p>5</p>
+            <p>4</p>
+            <p>5</p>
+
+            
+            <!-- Features -->
+            <p>Features</p>
+            <p>Full Self-Driving Capability
+                    <br>
+                    <br>
+                    advanced infotainment
+                    <br>
+                    <br>
+                    massive 15-inch central touchscreen infotainment
+
+                    <br>
+                    <br>
+App control
+<br>
+<br>
+Optional Glass Roof
+
+                    </p>
+            <p>Acoustic safety-belt warning
+                    <br>
+                    <br>
+                    BMW Assist eCall™
+                    <br>
+                    <br>
+                    Front and rear Head Protection System (HPS)
+                    <br>
+                    <br>
+                    Coded Driveaway Protection
+                    <br>
+                    <br>
+BMW Remote Services
+
+                    </p>
+            <p>NISSANCONNECT
+                    <br>
+                    <br>
+                    Automatic Collision Notification
+                    <br>
+                    <br>
+                    Remote Access
+                    <br>
+                    <br>
+                    Customisable Alert
+                    <br>
+                    <br>
+                    Bose® Energy Efficient Premium Audio System
+                </p>
+
+            
+            <!-- Interior -->
+            <p>Interior</p>
+            <p>
+                    15” touchscreen display
+                    <br>
+                    <br>
+                    
+                    Dual zone climate control system
+                    <br>
+                    <br>
+                    Internet streaming radio
+                    <br>
+                    <br>
+                    Textile seating
+                    <br>
+                    <br>
+                    Front center console with open storage and two USB ports
+                    </p>
+            <p>
+                    Velour floormats
+                    <br>
+                    <br>
+                    Kenaf interior dash and door panels
+                    <br>
+                    <br>
+                    Slide-through interior floor design
+                    </p>
+            <p>Keyless Entry
+                    <br>
+                    <br>
+                    Zero Gravity Inspired Seats
+                    <br>
+                    <br>
+                    Around View Monitor
+                    <br>
+                    <br>
+                    Fine Vision Meter
+                    </p>
+
+            
+            <!-- Exterior -->
+            <p>Exterior</p>
+            <p>18-inch Aero wheels
+                    <br>
+                    <br>
+                    XXX**add few more
+                    </p>
+            <p>
+                    BMW i U-shaped LED brakelights
+                    <br>
+                    <br>
+                    Carbon Fiber Reinforced Plastic (CFRP) roof
+                    <br>
+                    <br>
+                    BMW i U-shaped LED daytime running lights
+                    <br>
+                    <br>
+                    MW i Turbine light alloy wheels
+                    </p>
+            <p>
+                    All season tires
+                    <br>
+                    <br>
+                    16 in. wheels
+                    <br>
+                    <br>
+                    Rear spoiler
+                    <br>
+                    <br>
+                    XXX**add few more
+                    </p>
+
+            
+            <!-- Paint Job Option -->
+            <p>Paint Job Option</p>
+            <p>
+                    Solid Black: Standard
+                    <br>
+                    <br> 
+                    Midnight Silver Metallic
+                    <br>
+                    <br>
+                    Deep Blue Metallic
+                    <br>
+                    <br>
+                    Silver Metallic
+                    <br>
+                    <br>
+                    Pearl White Multi
+                    <br>
+                    <br>
+                    Red Multi-Coat
+                    </p>
+            <p>Capparis White 
+                    <br>
+                    <br>
+
+                    Fluid Black
+                    <br>
+                    <br>
+                    Imperial Blue Metallic
+                    <br>
+                    <br>
+                    Melbourne Red Metallic
+                    <br>
+                    <br>
+                    Mineral Gray Metallic
+                    <br>
+                    <br>
+                    Protonic Blue Metallic
+                    </p>
+            <p>Brilliant Silver
+                    <br>
+                    <br>
+                    Gun Metallic
+                    <br>
+                    <br>
+                    Jade Frost
+                    <br>
+                    <br>
+                    Super Black, Scarlet Ember (Premium color)
+                    <br>
+                    <br>
+                    Pearl White (Premium color)
+                    <br>
+                    <br>
+                    Glacier White, Deep Blue Pearl
+                    </p>
+
+            
+            <!-- Safety Features -->
+            <p>Safety Features</p>
+            <p>
+
+                    Three-point safety belts
+                    <br>
+                    <br>
+                    Two LATCH (Lower Anchors and Tethers for Children) attachments in second row
+                    <br>
+                    <br>
+                    Electronic stability
+                    <br>
+                    <br>
+                    Traction control
+                    <br>
+                    <br>
+                    Four-wheel antilock 
+                    <br>
+                    <br>
+                    
+                    Electronic parking brake
+                    <br>
+                    <br>
+                    Child safety locks
+                    <br>
+                    <br>
+                    Anti-theft alarm system
+                    <br>
+                    <br>
+                    Tire pressure monitoring system
+                    </p>
+            <p>Emergency braking preparation
+                    <br>
+                    <br>
+                    Front and rear head airbags
+                    <br>
+                    <br>
+                    4-wheel ABS
+                    <br>
+                    <br>
+                    Traction control
+                    <br>
+                    <br>
+                    Emergency braking assist
+                    <br>
+                    <br>
+                    Pre-collision safety system
+                    <br>
+                    <br>
+                    Engine immobilizer
+                    <br>
+                    <br>
+                    Dusk sensing headlamps
+                    <br>
+                    <br>
+                    Child seat anchors
+                    
+                </p>
+            <p>Front SRS AIRBAGS / Side AIRBAGS
+                    <br>
+                    <br>
+                    Anti-Lock Braking System (ABS)
+                    <br>
+                    <br>
+                    Electronic Brake Force Distribution (EBD)
+                    <br>
+                    <br>
+                    Hill Start Assist / Advance Hill Descent Control
+                    <br>
+                    <br>
+                    Child Seat Anchorage
+                    <br>
+                    <br>
+                    Active Understeer Control (HDC)
+                    <br>
+                    <br>
+                    NATS Security System
+                    <br>
+                    <br>
+                    Electronic Brake Force Distribution
+                    <br>
+                    <br>
+                    Brake Assist System (BA)
+                    
+            </p>
+
+            
+            <!-- Driving Assist Capabilities -->
+            <p>Driving Assist Capabilities</p>
+            <p>Enhanced Autopilot
+                    <br>
+                    <br>
+                    Automatically change lanes.
+                    <br>
+                    <br>
+                    
+                    Full Self-Driving Capability
+                    </p>
+            <p>Active Cruise Control Assistance
+                    <br>
+                    <br>
+                    Traffic Jam Assist
+                    </p>
+            <p>Intelligence Mobility
+                    <br>
+                    <br>
+                    Blind Spot Warning
+                    <br>
+                    <br>
+                    Pro Pilot Assist
+                    </p>
+
+             
+            <!-- Standard Drive Modes -->
+            <p>Warranty</p>
+            <p>4 years or 50,000 miles (80,000 km)
+
+            </br>
+            </br>
+                    8 years or 100,000 miles (160,000 km) for both battery and drive
+                    </p>
+
+            <p>4-year/50,000-mile
+                    <br>
+                    <br>    
+
+                    12-year Unlimited Mileage Rust Perforation Limited Warranty
+                    <br>
+                    <br>
+                    8-year/100,000-mile High-Voltage Battery Warranty
+                    <br>
+                    <br>
+                    4-year Unlimited Mileage Roadside Assistance Program
+                    </p>
+            <p>3 Yr./ 36000 Mi.
+                    <br>
+                    <br>
+                    8-year/100,000-mile High-Voltage Battery Warranty
+                    <br>
+                    <br>
+                    DRIVETRAIN 
+                    5 yr./ 60000 mi</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-group wrapper">
+                <ul class="menu-section">
+                    <li class="section-title">Social</li>
+                    <li><a href="#">Faceboo</a>k</li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+                <ul class="menu-section">
+                    <li class="section-title">About</li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+        
+                <ul class="menu-section">
+                    <li class="section-title">Legal & Cookies</li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>   
+        
+                <ul class="menu-section">
+                    <li class="section-title">Contact</li>
+                    <li><a href="contact.html">General Enquiries</a></li>
+                    <li><a href="#">Press Enquiries</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>   
+                <div class="slogan-container">
+                    <p>We aspire to use sustainable energy<br/> to power our future, starting from our <br/>automotives.</p>
+                </div>
+            </div>
+        </div> <!-- footer-top -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-group wrapper">
+                <div class="country-selector">
+                    <label>Change country:</label>
+                    <select>
+                        <option>Malaysia</option>
+                        <option>Taiwan</option>
+                        <option>China</option>
+                    </select>
+                </div>
+                <div class="copyright">
+                    <p>All Rights Reserved by Green Car Forum 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

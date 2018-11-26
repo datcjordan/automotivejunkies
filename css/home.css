@@ -1,0 +1,242 @@
+  /*  Home style */
+  .top-pick {
+    padding: 30px 0 40px;
+    color: black;
+}
+
+.top-pick-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.top-pick h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.top-pick h1, .review h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: var(--default-text);
+}
+
+.car-item-container {
+    text-align: center;
+    color: black;
+    position: relative
+}
+
+.car-item-container:hover::before {
+    opacity: 1;
+}
+
+.car-item-container:hover > .car-img {
+    transform: translateY(-5px);
+}
+
+.car-item-container:hover > .car-brand, 
+.car-item-container:hover > .car-name {
+    animation: JumpyAnimation 0.8s infinite forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.car-item-container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.5);    
+    opacity: 0;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.car-img {
+    height: 150px;
+    margin: 30px 0;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.review {
+    padding: 30px 0 40px;
+    color: black;
+}
+
+.review-case {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: var(--medium-text);
+    font-weight: 400;
+}
+
+.review-case > li {
+    border-right: 1px solid black;
+    padding: 0 20px;
+}
+
+.review-case > li:last-child {
+    border-right: none;
+}
+
+.review-case > li a {
+    color: var(--gray);
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.review-case > li a:hover {
+    color: black;
+}
+
+.car-hero-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+        
+.car-hero-item-group .logo {
+    text-indent: -10000px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+}
+
+.car-hero-item-group .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+
+        
+.tesla {
+    background-image: url("../img/tesla_bg1.png");
+}
+
+.tesla .logo {
+    background-image: url("../img/tesla_logo.png");
+}
+
+.bmw {
+    background-image: url("../img/bmw_bg1.png");
+}
+
+.bmw .logo {
+    background-image: url("../img/bmw_logo.png");
+    width: 100px;
+}
+
+.nissan {
+    background-image: url("../img/nissan_bg1.png");
+}
+
+.nissan .logo {
+    background-image: url("../img/nissan_logo.png");
+}
+
+.car-hero-item-group .car-name {
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.car-hero-item-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.description {
+    justify-self: end;
+}
+
+.description-group {
+    text-align: center;
+}
+
+.learn-more {
+    text-transform: uppercase;
+    background: rgba(0,0,0,0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 10px 50px;
+    transition: 0.5s cubic-bezier(0.2,0.8,0.2,1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tesla .learn-more:hover {
+    background: #581C1C;
+    border: 2px solid #581C1C;  
+}
+
+.bmw .learn-more:hover {
+    background: #1C2A58;
+    border: 2px solid #1C2A58;
+}
+
+.nissan .learn-more:hover {
+    background: #1C5838;
+    border: 2px solid #1C5838;
+}
+
+.learn-more:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+@keyframes JumpyAnimation {
+    0% {
+        transform :translateY(-0px); 
+    }
+
+    50% {
+        transform :translateY(-3px);
+    }
+
+    100% {
+        transform :translateY(0px);
+    }
+}
+
+
+@media (max-width: 900px) {
+    .top-pick-group {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 810px) { 
+    .review {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .car-hero-item-group {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .car-hero-item-group .logo {
+        padding-top: 100px;
+    }
+
+    .description {
+        padding-top: 40px;
+        justify-self: center;
+    }
+
+}

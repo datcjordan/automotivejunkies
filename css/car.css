@@ -1,0 +1,92 @@
+
+.car-logo-container-top, .car-logo-container-bottom  {
+    text-align: center;
+}
+
+.car-logo-container-top img, .car-logo-container-bottom img {
+    width: 100px;
+    margin: 100px 0 40px 0;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 30px;
+}
+
+.feature-image {
+    grid-column: span 4;
+}
+
+.car-brand {
+    margin-bottom: 8px;
+}
+
+.description-container {
+    grid-column: 6 / 13;
+    color: black;
+}
+
+.company-info p:first-child, .car-info p:first-child {
+    margin-bottom: 20px;
+}
+
+.company-info {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 30px;
+}
+
+.car-item-container {
+    text-align: center;
+    color: black;
+}
+
+.car-img {
+    height: 150px;
+    width: auto;
+    margin: 30px 0;
+}
+
+.car-info {
+    padding-top: 30px;
+}
+
+.car-brand {
+    text-transform: uppercase;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.car-logo-container-bottom {
+    display: none;  
+}
+
+
+@media (max-width: 800px) {
+    .info-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .car-logo-container-top {
+        display: none;
+    }
+
+    .car-logo-container-bottom {
+        margin: 0;
+        display: block;
+    }
+    
+    .description-container {
+        grid-column: span 4;
+        color: black;
+        margin-top: 40px;   
+        padding: 0 40px;
+    }
+    
+}
